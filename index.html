@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuário de pesquisa - IFTO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header> 
+        <img src="img/logo IFTO.png" alt="Logo IFTO" class="logo">
         <h1> Pesquisa de Satisfação - IFTO</h1> 
     </header>
         <form action="" method="get" id="idformulario">
@@ -29,21 +31,35 @@
     <input id="idIdade" name="idade" type="number" min="10">
 <br>
 
-    <label>Vinculo</label>
-    <input id= "idVinculo" type="radio" name="Vinculo" value= "discente">
-    <label for="idVinculo" >Discente</label>
+    <label>Vínculo</label>
+    <div class="radio-group">
 
-    <input id= "iddoscentes" type="radio" name="Vinculo" value= "doscente">
-    <label for="iddoscentes">Doscente</label>
+    <label class="radio-item">
+        <input type="radio" name="vinculo" value="discente">
+        Discente
+    </label>
 
-    <input id= "idTecnicosadmisnistrativos" type="radio" name="Vinculo" value= "TecnicoAdministrativo">
-    <label for="idTecnicosadmisnistrativos">Técnico Administrativo</label>
+    <label class="radio-item">
+        <input type="radio" name="vinculo" value="docente">
+        Docente
+    </label>
 
-    <input id= "idPais/Responsaveis" type="radio" name="Vinculo" value= "Pais/Responsaveis">
-    <label for="idPais/Responsaveis">Pais/Responsáveis</label>
+    <label class="radio-item">
+        <input type="radio" name="vinculo" value="tecnico">
+        Técnico Administrativo
+    </label>
 
-    <input id= "idComunidade externa" type="radio" name="Vinculo" value= "ComunidadeExterna">
-    <label for="idComunidade externa">Comunidade Externa</label>
+    <label class="radio-item">
+        <input type="radio" name="vinculo" value="pais">
+        Pais/Responsáveis
+    </label>
+
+    <label class="radio-item">
+        <input type="radio" name="vinculo" value="externa">
+        Comunidade Externa
+    </label>
+    </div>
+
 <br>
 
     <label for="idCampus">Campus</label>
